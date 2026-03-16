@@ -27,7 +27,7 @@
         .carousel-item img { width: 100%; height: 100%; object-fit: cover; }
 
         .social-float { position: fixed; right: 30px; z-index: 10000; display: flex; flex-direction: column; gap: 15px; }
-        .wsp-flotante { width: 60px; height: 60px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center; transition: 0.3s; }
+        .wsp-flotante { width: 60px; height: 60px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center; transition: 0.3s; bottom: 30px; }
         .ig-flotante { width: 60px; height: 60px; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); color: #FFF; border-radius: 50px; display: flex; justify-content: center; align-items: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); transition: 0.3s; }
         .wsp-flotante:hover, .ig-flotante:hover { transform: scale(1.1); }
 
@@ -91,7 +91,6 @@
 
         <section id="colegios" class="py-16 border-b border-gray-200 animate__animated animate__fadeInUp">
             <h2 class="text-xl font-bold mb-2 uppercase text-center tracking-widest text-blue-900 font-black">Nuestros Colegios</h2>
-            <p class="text-[10px] text-gray-500 text-center mb-8 uppercase tracking-widest">Estamos actualizando los catálogos para el Ciclo Lectivo 2026. Consultanos por stock inmediato.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="section-card p-4 flex flex-col items-center justify-center text-center" onclick="abrirGaleria('don-bosco')">
                     <img src="don bosco.png" class="h-20 w-auto mb-3 object-contain">
@@ -133,7 +132,6 @@
             <div class="section-card p-10" onclick="abrirGaleria('proximamente')"><h2 class="text-xl font-bold text-blue-900 uppercase">Egresados</h2></div>
             <div class="section-card p-8 flex flex-col items-center min-h-[200px]" onclick="abrirGaleria('marcas-corporativas')">
                 <h2 class="text-xl font-bold text-blue-900 uppercase">Empresas</h2>
-                <span class="text-[9px] text-gray-400 mt-1 uppercase tracking-widest font-bold">Marcas que confían</span>
                 <a href="https://api.whatsapp.com/send?phone=5492664219911&text=Hola%20VOLGA,%20necesito%20un%20presupuesto%20por%20bordados/uniformes%20para%20mi%20empresa..." 
                    target="_blank" onclick="event.stopPropagation();"
                    class="mt-auto bg-blue-900 hover:bg-blue-800 text-white text-[10px] font-bold py-2 px-4 rounded uppercase tracking-widest shadow-md transition">Solicitar Presupuesto</a>
@@ -189,11 +187,11 @@
             <h2 class="text-xl font-bold mb-8 uppercase tracking-widest text-blue-900 font-black">Nuestra Ubicación</h2>
             <div class="max-w-4xl mx-auto bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
                 <div class="w-full h-80 rounded-xl overflow-hidden mb-6">
-                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.801648074984!2d-66.3436329241857!3d-33.265269788094625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE1JzU0LjIiUyA2NsKwMjAnMjcuOSJX!5e0!3m2!1ses-419!2sar!4v1700000000000" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13344.240726197344!2d-66.3533965!3d-33.2649537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43be888062829%3A0xc622e9603f90558b!2sVOLGA%20Indumentaria%20%26%20Bordados!5e0!3m2!1ses!2sar!4v1705624021200!5m2!1ses!2sar" allowfullscreen></iframe>
                 </div>
                 <p class="text-gray-600 text-sm mb-4 font-bold uppercase tracking-tighter italic text-center">Av. Fuerza Aérea Argentina 3750, B° Universitario, Mz 2, Casa 8, San Luis</p>
                 <div class="flex justify-center">
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=-33.2650556,-66.34108331" target="_blank" class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-xs uppercase shadow-md transition flex items-center gap-2">Abrir en Google Maps (GPS)</a>
+                    <a href="https://maps.app.goo.gl/vE9C8WreQzR14Wk3A" target="_blank" class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-xs uppercase shadow-md transition flex items-center gap-2">Abrir en Google Maps (GPS)</a>
                 </div>
             </div>
         </section>
@@ -202,6 +200,7 @@
     <footer class="bg-gray-100 py-16 border-t text-center animate__animated animate__fadeIn">
         <div class="flex justify-center gap-6 mb-8">
             <a href="https://www.instagram.com/volgaindumentariasanluis" target="_blank" class="text-gray-600 hover:text-pink-600 transition"><svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.281.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+            <a href="https://api.whatsapp.com/send?phone=5492664219911" target="_blank" class="text-gray-600 hover:text-green-600 transition"><svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
         </div>
         <a href="https://api.whatsapp.com/send?phone=5492664219911" target="_blank" class="btn-contacto inline-block px-12 py-4 rounded font-bold uppercase text-sm shadow-md">WhatsApp de Ventas</a>
     </footer>
@@ -213,13 +212,13 @@
         <div id="guiaTallesDonBosco" class="hidden w-full max-w-4xl mb-6 text-center">
             <button onclick="toggleTalles()" class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-sm uppercase tracking-widest shadow-lg transition">📏 Ver Guía de Talles</button>
             <div id="listaTalles" class="hidden grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 max-h-80 overflow-y-auto p-4 bg-white/10 rounded-xl">
-                <div class="bg-white p-2 rounded shadow"><img src="Conjunto dep Don Bosco.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Conjunto Deportivo</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Indumentaria Campera.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Campera Frisa</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Indumentaria Chomba.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Chombas</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Indumentaria Don Bosco - Pantalones.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pantalón Frisa</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Indumentaria Don Bosco Pantalón Corto.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pantalón Corto Gym</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Le comparto la tabla de talles para que verifique si es el que corresponde.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Remeras Gym</p></div>
-                <div class="bg-white p-2 rounded shadow"><img src="Pollera pantalon.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pollera Pantalón</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Conjunto dep Don Bosco.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Conjunto Deportivo</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Indumentaria Campera.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Campera Frisa</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Indumentaria Chomba.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Chombas</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Indumentaria Don Bosco - Pantalones.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pantalón Frisa</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Indumentaria Don Bosco Pantalón Corto.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pantalón Corto Gym</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Le comparto la tabla de talles para que verifique si es el que corresponde.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Remeras Gym</p></div>
+                <div class="bg-white p-2 rounded shadow"><img loading="lazy" src="Pollera pantalon.jpg" class="h-auto w-full object-contain foto-item" onclick="ampliarImagen(this.src)"><p class="text-[10px] text-gray-800 font-bold mt-2 uppercase">Pollera Pantalón</p></div>
             </div>
         </div>
         <div id="contenedorFotos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full overflow-y-auto px-4 pb-20"></div>
@@ -265,7 +264,7 @@
         items.forEach(item => {
             const div = document.createElement('div');
             div.className = "bg-white p-3 rounded shadow-xl flex flex-col items-center";
-            div.innerHTML = `<img src="${item.f}" class="foto-item w-full h-64 object-contain rounded bg-gray-50 mb-3" onclick="event.stopPropagation(); ampliarImagen(this.src)" onerror="this.src='https://via.placeholder.com/300?text=Foto+VOLGA'"><p class="text-[11px] font-bold text-gray-700 uppercase text-center">${item.n}</p>`;
+            div.innerHTML = `<img loading="lazy" src="${item.f}" class="foto-item w-full h-64 object-contain rounded bg-gray-50 mb-3" onclick="event.stopPropagation(); ampliarImagen(this.src)" onerror="this.src='https://via.placeholder.com/300?text=Foto+VOLGA'"><p class="text-[11px] font-bold text-gray-700 uppercase text-center">${item.n}</p>`;
             contenedor.appendChild(div);
         });
         modal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; 
